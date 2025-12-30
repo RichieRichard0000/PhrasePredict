@@ -1,3 +1,5 @@
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 import streamlit as st
 import numpy as np
 import pickle
@@ -53,8 +55,8 @@ def predict_next_word(seed_text, temperature, k):
 # ----------------------------
 st.set_page_config(page_title="Idiom Predictor", layout="centered")
 
-st.title("🧠 Idiom Next-Word Predictor")
-st.write("LSTM model trained on English idioms (Kaggle).")
+st.title("🧠 PhrasePredict : Idiom Next-Word Predictor")
+st.write("LSTM model trained on English idioms (Wiktionary).")
 
 seed = st.text_input(
     "Enter a partial idiom:",
