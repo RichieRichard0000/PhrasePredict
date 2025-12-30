@@ -1,3 +1,5 @@
-streamlit==1.31.1
 tensorflow==2.15.0
+streamlit==1.31.1
+huggingface_hub
+torch
 numpy
